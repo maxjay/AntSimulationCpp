@@ -21,7 +21,7 @@ int main()
 	window.create(sf::VideoMode(1000.0f * screenScalingFactor, 1000.0f * screenScalingFactor), "Ant Simulation");
 	platform.setIcon(window.getSystemHandle());
 	sf::Event event;
-	// window.setFramerateLimit(60);
+	window.setFramerateLimit(60);
 	while (window.isOpen())
 	{
 		while (window.pollEvent(event))

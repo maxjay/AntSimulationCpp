@@ -4,7 +4,7 @@
 #include <random>
 struct Ant
 {
-	double speed = 0.5;
+	double speed = 1;
 	int angle = 0;
 	double x = 0;
 	double y = 0;
