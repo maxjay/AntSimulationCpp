@@ -7,7 +7,7 @@ int main()
 	srand(time(NULL));
 	util::Platform platform;
 	std::vector<Ant> ants;
-	for (int i = 0; i < 1000; i++)
+	for (int i = 0; i < 500; i++)
 	{
 		ants.push_back(Ant(10, 10));
 	}
