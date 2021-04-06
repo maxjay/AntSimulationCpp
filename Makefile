@@ -10,7 +10,7 @@ MAKEFLAGS += --no-print-directory
 SHELL := /bin/sh
 
 # Build platform
-PLATFORM?=linux
+PLATFORM?=windows
 # Build description (Primarily uses Debug/Release)
 BUILD?=Release
 _BUILDL := $(shell echo $(BUILD) | tr A-Z a-z)
@@ -34,7 +34,7 @@ DUMP_ASSEMBLY?=false
 CLEAN_OUTPUT?=true
 
 # If dll, build as a static library?
-BUILD_STATIC?=false
+BUILD_STATIC?=true
 
 # Platform specific environment variables
 -include env/.all.mk
