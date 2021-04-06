@@ -2,6 +2,8 @@
 #include <cstdlib>
 #include <ctime>
 #include <random>
+#define PI 3.14159265
+
 struct Ant
 {
 	double speed = 1;
@@ -35,8 +37,8 @@ struct Ant
 				break;
 		}
 		angle %= 360;
-		x += speed * cos(angle);
-		y += speed * sin(angle);
+		x += speed * cos(angle * PI / 180.0);
+		y += speed * sin(angle * PI / 180.0);
 		return *this;
 	}
 
